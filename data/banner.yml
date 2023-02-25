@@ -9,4 +9,5 @@ button:
   label : "Get Started"
   link : "#first"
 image : "images/banner.jpg"
+alt: "A large wilderness valley in autumn, covered with forest, plains and lakes and traversed by a river."
 

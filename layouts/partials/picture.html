@@ -1,7 +1,14 @@
 <article>
-    <a href="{{ .image }}" class="image">
-        <img src="{{ .thumb }}" alt="" />
+    {{ $alttext := .alt }}
+    {{ with resources.Get .image }}
+    {{ with .Resize (printf "%dx%d webp photo" .Width .Height) }}
+    <a href="{{ .RelPermalink }}" class="image">
+	{{ with .Fill "360x250 webp photo" }}
+        <img src="{{ .RelPermalink }}" alt="{{ $alttext }}" />
+        {{ end }}
     </a>
+    {{ end }}
+    {{ end }}
     <div class="caption">
         <h3>{{ .title }}</h3>
         <p>{{ .content }}</p>

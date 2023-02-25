@@ -8,7 +8,12 @@
             <li><a href="{{ .link }}" class="button primary large wide smooth-scroll-middle">{{ .label }}</a></li>
         </ul>{{ end }}
     </div>
-    {{ with .image }}<div class="image">
-        <img src="{{.}}" alt="Hugo Story" />
-    </div>{{end}}
+    {{ $alttext := .alt }}
+    {{ with resources.Get .image }}
+    <div class="image">
+    	{{ with .Resize (printf "%dx webp photo" .Width) }}
+    	<img src="{{ .RelPermalink }}" alt="{{ $alttext }}" />
+    	{{ end }}
+    </div>
+    {{ end }}
 </section>
