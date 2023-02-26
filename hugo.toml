@@ -1,0 +1,59 @@
+## -----------------------------------------------
+## Basic Configuration
+## -----------------------------------------------
+
+title = "Airvore"
+theme = "hugo-story"
+copyright = "{year}"
+
+## -----------------------------------------------
+## Publish
+## -----------------------------------------------
+
+relativeURLs = "true"
+#canonifyURLs = "true"
+
+## Directories
+#archetypeDir = "archetypes"
+#assetDir = "assets"
+#resourceDir = "resources"
+#publishDir = "public"
+
+## -----------------------------------------------
+## Hugo Built-in Features
+## -----------------------------------------------
+
+enableGitInfo = "true"
+disableKinds = ["taxonomy", "taxonomyTerm", "section"]
+# googleAnalytics = "G-RP8E0TN2P6"  # only in production
+
+## -----------------------------------------------
+## Site Parameters
+## -----------------------------------------------
+defaultContentLanguage = 'en'
+titleCaseStyle = "Chicago"
+timeZone = "Europe/Paris"
+
+[imaging]
+## Default values are commented out.
+  anchor = 'Smart'
+#  bgColor = '#ffffff'
+  hint = 'photo'
+#  quality = 75
+  resampleFilter = 'Box'
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+#    excludeFields = ''
+#    includeFields = ''  
+
+[Params]
+  favicon = true
+  AuthorName = "Laurent Castaignède"
+
+[Params.social]
+
+[Params.asset]
+  fontawesome_css = ["css/fontawesome-all.min.css"]
+  fontawesome_js = ["js/fontawesome-all.min.js"]
+  

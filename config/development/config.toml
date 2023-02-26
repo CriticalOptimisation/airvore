@@ -1,5 +1,5 @@
 ## -----------------------------------------------
-## Basic Configuration
+## Basic Configuration (development)
 ## -----------------------------------------------
 
 title = "Hugo Story"
@@ -16,16 +16,33 @@ relativeURLs = "true"
 baseURL = "/"
 publishDir = "public"
 
-# Remote
-#baseURL = "https://caressofsteel.github.io/demos/hugo/hugo-story/"
-#publishDir = "//centos/sites/hugodev/hugostory/"
+## Built-in server configuration
+watch = "true"
+
+[server]
+[[server.headers]]
+  for = '/*'
+  [server.headers.values]
+    Content-Security-Policy = "default-src 'self';style-src 'self' https://fonts.googleapis.com 'sha256-t5UevlZFg4AscJaQBUf/8TJdDo/qHa8JaDSW3ITQjJs=' 'sha256-jltyiCS6pvytLMCNlcJTdKgVaSVp6+pZoGQyUv5F2io='; font-src 'self' https://fonts.gstatic.com;img-src data: 'self';script-src 'self' https://www.googletagmanager.com/ https://www.google-analytics.com/ 'sha256-69UL0gXNsUfacQNO+lVXToGgfheKCIInl4fwPTPkgak=' 'sha256-/F7HKoI0UG7E/LXno/mf5iaMdCElzxnYmm7+y2K6Oqc='; connect-src https://*.google-analytics.com;frame-ancestors 'none';"
+    X-Frame-Options = 'DENY'
+    Permissions-Policy = "accelerometer=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), fullscreen=(), screen-wake-lock=()"
+  
+[[server.headers]]
+  for = '/'
+  [server.headers.values]
+    Access-Control-Allow-Origin = "*"
+    
+[[server.headers]]
+  for = '/**/*'
+  [server.headers.values]
+    Access-Control-Allow-Origin = "http://localhost:1313"
+  
 
 ## -----------------------------------------------
-## Hugo Built-in Features
+## Hugo Built-in Features (see hugo.toml)
 ## -----------------------------------------------
 
-disableKinds = ["taxonomy", "taxonomyTerm", "section"]
-# googleAnalytics = "G-XXXXXXXXXX"
+enableGitInfo = "true"
 
 ## -----------------------------------------------
 ## Site Parameters
