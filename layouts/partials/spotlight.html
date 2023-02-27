@@ -10,7 +10,11 @@
     <div class="image">
     	{{ $alttext := .alt }}
     	{{ with resources.Get .image }}
-    	{{ with .Resize (printf "%dx webp photo" .Width) }}
+    	    {{ $width := 868 }}
+	    {{ if lt .Width $width }}
+		    {{ $width := .Width }}
+	    {{ end }}
+    	{{ with .Resize (printf "%dx webp photo" $width) }}
     	<img src="{{ .RelPermalink }}" alt="{{ $alttext }}" />
     	{{ end }}
     	{{ end }}

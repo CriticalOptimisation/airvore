@@ -1,3 +1,23 @@
-{{ with resources.Get . }}{{ with .Resize (printf "%dx%d webp photo" .Width .Height) }}
-<img src="{{ .RelPermalink }}" alt=""/>
-{{ end }}{{ end }}
+{{ if eq (printf "%T" .) "string" }}
+	{{- with resources.Get . }}
+	    {{ if lt .Width 15360 }}
+		    {{ with .Resize (printf "%dx webp photo" .Width) -}}
+			<img src="{{ .RelPermalink }}" alt=""/>
+		    {{ end }}
+	    {{ else }}
+	    	    <!-- Only really huge images get downscaled here to the max useful size. -->
+		    {{ with .Resize "15360x" "webp" "photo" -}}
+			<img src="{{ .RelPermalink }}" alt=""/>
+		    {{ end }}
+	    {{ end }}
+	{{ end }}
+{{ else }}
+	<!-- executed only if . is a dict, which is normally because the width is forced. -->
+	{{ $width := .Width }}
+	{{- with resources.Get .File }}
+	    {{ with .Resize (printf "%dx webp photo" $width) -}}
+		<img src="{{ .RelPermalink }}" alt=""/>
+	    {{ end }}
+	{{ end }}
+{{ end }}
+
