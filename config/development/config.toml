@@ -23,7 +23,7 @@ watch = "true"
 [[server.headers]]
   for = '/*'
   [server.headers.values]
-    Content-Security-Policy = "default-src 'self';style-src 'self' https://fonts.googleapis.com 'sha256-t5UevlZFg4AscJaQBUf/8TJdDo/qHa8JaDSW3ITQjJs=' 'sha256-jltyiCS6pvytLMCNlcJTdKgVaSVp6+pZoGQyUv5F2io='; font-src 'self' https://fonts.gstatic.com;img-src data: 'self';script-src 'self' https://www.googletagmanager.com/ https://www.google-analytics.com/ 'sha256-69UL0gXNsUfacQNO+lVXToGgfheKCIInl4fwPTPkgak=' 'sha256-/F7HKoI0UG7E/LXno/mf5iaMdCElzxnYmm7+y2K6Oqc='; connect-src https://*.google-analytics.com;frame-ancestors 'none';"
+    Content-Security-Policy = "default-src 'self';style-src 'self' https://fonts.googleapis.com  'sha256-t5UevlZFg4AscJaQBUf/8TJdDo/qHa8JaDSW3ITQjJs=' 'sha256-4Cqrb9+UVnxYYbmkWOWFDIDtOh5RSNjO41psqDRsOhw=' 'sha256-PlTkgCr7abMkWLmLhbsMIx5IZAK+f/mrWppZJA1W79M='; font-src 'self' https://fonts.gstatic.com https://*.fontawesome.com;img-src data: 'self';script-src 'self' https://www.googletagmanager.com/ https://www.google-analytics.com/ https://kit.fontawesome.com/ 'sha256-69UL0gXNsUfacQNO+lVXToGgfheKCIInl4fwPTPkgak=' 'sha256-/F7HKoI0UG7E/LXno/mf5iaMdCElzxnYmm7+y2K6Oqc='; connect-src ws://localhost:1313/livereload https://*.google-analytics.com https://*.fontawesome.com;frame-ancestors 'none';"
     X-Frame-Options = 'DENY'
     Permissions-Policy = "accelerometer=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), fullscreen=(), screen-wake-lock=()"
   
@@ -49,18 +49,11 @@ enableGitInfo = "true"
 ## -----------------------------------------------
 
 [Params]
-  description = "A (modular, highly tweakable) responsive one-page theme for Hugo"
+  description = "Development configuration"
   logo = "images/banner.jpg"
   favicon = true
 
 [Params.social]
-  github = "https://github.com/caressofsteel/"
-  twitter = "https://twitter.com/caressofsteel_"
-  email = "caressofsteel@protonmail.com"
-  instagram = "https://instagram.com"
-  linkedin = "https://linkedin.com"
-  telegram = "https://telegram.org"
 
 [Params.asset]
-  fontawesome_css = ["css/fontawesome-all.min.css"]
-  fontawesome_js = ["js/fontawesome-all.min.js"]
+

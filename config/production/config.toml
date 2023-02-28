@@ -28,15 +28,6 @@ googleAnalytics = "G-RP8E0TN2P6"
 ## -----------------------------------------------
 
 [Params]
-#  description = "A (modular, highly tweakable) responsive one-page theme for Hugo"
-#  logo = "images/banner.jpg"
-#  favicon = true
 
 [Params.social]
-  github = "https://github.com/CriticalOptimisation/"
-  twitter = "https://twitter.com/jpeuvedic"
-  email = "laurentcastaignede@orange.fr"
-  instagram = "https://instagram.com"
-  linkedin = "https://linkedin.com"
-#  telegram = "https://telegram.org"
 
