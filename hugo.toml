@@ -30,7 +30,16 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 ## -----------------------------------------------
 ## Site Parameters
 ## -----------------------------------------------
-defaultContentLanguage = 'en'
+
+## Language parameters
+defaultContentLanguage = 'fr'
+defaultContentLanguageInSubdir = 'True'
+[languages]
+  [languages.fr]
+    title = "Airvore ou le mythe des transports propres"
+  [languages.en]
+    title = "Airvore: The Myth of Clean Transportation"
+  
 titleCaseStyle = "Chicago"
 timeZone = "Europe/Paris"
 
@@ -54,20 +63,27 @@ timeZone = "Europe/Paris"
 #    excludeFields = ''
 #    includeFields = ''  
 
-[Params]
+[params]
   favicon = true
   AuthorName = "Laurent Castaignède"
 
-[Params.social]
-  github = "https://github.com/caressofsteel/"
-  twitter = "https://twitter.com/caressofsteel_"
-  email = "caressofsteel@protonmail.com"
+[params.social]
+  github = "https://github.com/CriticalOptimisation/airvore"
+  twitter = "https://twitter.com/jpeuvedic"
+  email = "airvore@calcool.ai"
   instagram = "https://instagram.com"
-  linkedin = "https://linkedin.com"
+  linkedin = "https://www.linkedin.com/in/jean-marc-le-peuvedic/"
 #  telegram = "https://telegram.org"
 
-[Params.asset]
-#  fontawesome_css = ["css/fontawesome-all.min.css"]
-#  fontawesome_js = ["js/fontawesome-all.min.js"]
+[params.aria]
+# Default accessible link text
+  github = "Voir le code source de ce site sur GitHub"
+  twitter = "Regardez nos Tweets sur Twitter"
+  email = "Envoyez-nous un mail"
+  instagram = "Visiter notre Instagram"
+  linkedin = "Le profil LinkedIn de l'auteur"
+#  telegram = "Rejoignez notre groupe Telegram"
+
+[params.asset]
   fontawesome_js = ["https://kit.fontawesome.com/74fa1d8c3d.js"]
   
