@@ -34,6 +34,13 @@ defaultContentLanguage = 'en'
 titleCaseStyle = "Chicago"
 timeZone = "Europe/Paris"
 
+## Configure sitemap.xml
+## Default changefreq and priority should be overridden in front matter file (in content).
+[sitemap]
+  filename = 'sitemap.xml'
+  changefreq = 'daily'
+  priority = 0.5
+
 [imaging]
 ## Default values are commented out.
   anchor = 'Smart'

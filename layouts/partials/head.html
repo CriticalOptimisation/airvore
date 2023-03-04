@@ -11,12 +11,12 @@
 	{{ end }}
 	
 	<!-- CSS -->
+	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS }}
 	{{ if .Site.IsServer }}
-	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" false) }}
-	<link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+	<style>{{ ($style).Content | safeCSS }}</style>
 	{{ else }}
-	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "enableSourceMap" false) }}
 	<link rel="stylesheet" href="{{ ($style | minify).RelPermalink }}">
+	<style>{{ ($style | minify).Content | safeCSS }}</style>
 	{{ end }}
 	{{ if .Site.IsServer }}
 	{{ $noscript := resources.Get "sass/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "css/noscript.css" "enableSourceMap" false) }}
@@ -31,4 +31,8 @@
 		<link rel="stylesheet" href="{{ . | absURL }}">
 	{{- end }}
 
+	<!-- FontAwesome JS -->
+	{{ range .Site.Params.asset.fontawesome_js -}}
+	    <script src="{{ . | absURL }}" crossorigin="anonymous"></script>
+	{{- end }}
 </head>
