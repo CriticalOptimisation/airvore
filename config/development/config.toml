@@ -2,9 +2,6 @@
 ## Basic Configuration (development)
 ## -----------------------------------------------
 
-title = "Hugo Story"
-copyright = "{year}"
-
 ## -----------------------------------------------
 ## Publish
 ## -----------------------------------------------
@@ -13,8 +10,11 @@ relativeURLs = "true"
 #canonifyURLs = "true"
 
 # Local
-baseURL = "/"
+baseURL = "http://localhost"
 publishDir = "public"
+
+# Language translation support
+#enableMissingTranslationsPlaceholders = "true"
 
 ## Built-in server configuration
 watch = "true"
@@ -23,7 +23,7 @@ watch = "true"
 [[server.headers]]
   for = '/*'
   [server.headers.values]
-    Content-Security-Policy = "default-src 'self';style-src 'self' https://fonts.googleapis.com 'sha256-5taXYVrumATDFCqxTqXO63qtk6IHM1NzyXipqaHMUvs=' 'sha256-t5UevlZFg4AscJaQBUf/8TJdDo/qHa8JaDSW3ITQjJs=' 'sha256-4Cqrb9+UVnxYYbmkWOWFDIDtOh5RSNjO41psqDRsOhw=' 'sha256-PlTkgCr7abMkWLmLhbsMIx5IZAK+f/mrWppZJA1W79M='; font-src 'self' https://fonts.gstatic.com https://*.fontawesome.com;img-src data: 'self';script-src 'self' https://www.googletagmanager.com/ https://www.google-analytics.com/ https://kit.fontawesome.com/ 'sha256-69UL0gXNsUfacQNO+lVXToGgfheKCIInl4fwPTPkgak=' 'sha256-/F7HKoI0UG7E/LXno/mf5iaMdCElzxnYmm7+y2K6Oqc='; connect-src ws://localhost:1313/livereload https://*.google-analytics.com https://*.fontawesome.com;frame-ancestors 'self';"
+    Content-Security-Policy = "default-src 'self';style-src 'self' https://fonts.googleapis.com 'sha256-5taXYVrumATDFCqxTqXO63qtk6IHM1NzyXipqaHMUvs=' 'sha256-t5UevlZFg4AscJaQBUf/8TJdDo/qHa8JaDSW3ITQjJs=' 'sha256-4Cqrb9+UVnxYYbmkWOWFDIDtOh5RSNjO41psqDRsOhw=' 'sha256-PlTkgCr7abMkWLmLhbsMIx5IZAK+f/mrWppZJA1W79M=' 'sha256-w8xYVLY0hvX+tSV+6adep3tS+W4/rBDA/h3l6o0NOaQ='; font-src 'self' https://fonts.gstatic.com https://*.fontawesome.com;img-src data: 'self';script-src 'self' https://www.googletagmanager.com/ https://www.google-analytics.com/ https://kit.fontawesome.com/ 'sha256-69UL0gXNsUfacQNO+lVXToGgfheKCIInl4fwPTPkgak=' 'sha256-/F7HKoI0UG7E/LXno/mf5iaMdCElzxnYmm7+y2K6Oqc='; connect-src ws://localhost:1313/livereload https://*.google-analytics.com https://*.fontawesome.com;frame-ancestors 'self';"
     X-Frame-Options = 'SAMEORIGIN'
     Permissions-Policy = "accelerometer=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), fullscreen=(), screen-wake-lock=()"
   

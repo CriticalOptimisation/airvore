@@ -32,14 +32,44 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 ## -----------------------------------------------
 
 ## Language parameters
-defaultContentLanguage = 'fr'
-defaultContentLanguageInSubdir = 'True'
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = "true"
+disableLanguages = ['en','pl','it','es']
+
 [languages]
+# If a [key] is defined, all the subkeys must be defined or they will be treated as absent for that language.
+# It is a mechanism that allows tailoring the interface to each language also by removing UI elements.
   [languages.fr]
-    title = "Airvore ou le mythe des transports propres"
+    languageName = "Français"
+    weight = 2
+    [languages.fr.params]
+      [languages.fr.params.social]
+	github = "https://github.com/CriticalOptimisation/airvore"
+	twitter = "https://twitter.com/jpeuvedic"
+	email = "airvore@calcool.ai"
+	instagram = "https://instagram.com"
+	linkedin = "https://www.linkedin.com/in/jean-marc-le-peuvedic/?locale=fr_FR"
+      [languages.fr.params.aria]
+	github = "Voir le code source de ce site sur GitHub"
+	twitter = "Regardez nos Tweets sur Twitter"
+	email = "Envoyez-nous un mail"
+	instagram = "Visiter notre Instagram"
+	linkedin = "Le profil LinkedIn de l'auteur"
+	telegram = "Rejoignez notre groupe Telegram"
+	
   [languages.en]
-    title = "Airvore: The Myth of Clean Transportation"
-  
+    languageName = "English"
+    weight = 1
+    [languages.en.params]
+      [languages.en.params.aria]
+	github = "Read the source code of this website on GitHub"
+	twitter = "Read our Tweets on Twitter"
+	email = "Send us an email"
+	instagram = "Visit our Instagram"
+	linkedin = "The author's LinkedIn profile"
+	telegram = "Join our Telegram group"
+
+title = "Airvore"  
 titleCaseStyle = "Chicago"
 timeZone = "Europe/Paris"
 
@@ -82,7 +112,7 @@ timeZone = "Europe/Paris"
   email = "Envoyez-nous un mail"
   instagram = "Visiter notre Instagram"
   linkedin = "Le profil LinkedIn de l'auteur"
-#  telegram = "Rejoignez notre groupe Telegram"
+  telegram = "Rejoignez notre groupe Telegram"
 
 [params.asset]
   fontawesome_js = ["https://kit.fontawesome.com/74fa1d8c3d.js"]

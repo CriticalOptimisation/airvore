@@ -1,0 +1,6 @@
+{{ $next := (first 1 page.Translations) }}
+
+{{ if $next }}
+	{{ return (index $next 0) }}
+{{ end }}
+

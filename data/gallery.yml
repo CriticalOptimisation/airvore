@@ -64,6 +64,7 @@ pictures:
     image: "images/gallery/fulls/09.jpg"
     thumb: "images/gallery/thumbs/09.jpg"
     button: "Details"
+    alt: "A young blonde woman wearing sunglasses and a red jacket, is hiking in the mountains and carrying a backpack."
 
   - title: "Title"
     content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
