@@ -1,5 +1,4 @@
-{{ errorf "page=%q" (page) }}
-{{ $next := (first 1 page.Translations) }}
+{{ $next := (first 1 $.Translations) }}
 
 {{ if $next }}
 	{{ return (index $next 0) }}

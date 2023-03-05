@@ -8,8 +8,9 @@
             {{ with .button }}
             <li><a href="#first" class="button primary large wide smooth-scroll-middle">{{partial "i18n" .label}}</a></li>
             {{ end }}
-            {{with partial "i18n_next"}}
-            <li><a href="{{.RelPermalink}}" class="button primary large wide smooth-scroll-middle">{{i18n .Language.Lang}}</a></li>
+            <!-- i18n_next returns the page object of the next translation of the current page -->
+            {{with partial "i18n_next" .Page}}
+            <li><a href="{{.RelPermalink}}" class="button primary large wide smooth-scroll-middle">{{.Language.LanguageName}}</a></li>
             {{ end }}
                     </ul>
     </div>

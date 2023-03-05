@@ -34,7 +34,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 ## Language parameters
 defaultContentLanguage = "fr"
 defaultContentLanguageInSubdir = "true"
-disableLanguages = ['en','pl','it','es']
+disableLanguages = ['pl','it','es']
 
 [languages]
 # If a [key] is defined, all the subkeys must be defined or they will be treated as absent for that language.
