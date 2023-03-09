@@ -10,10 +10,10 @@
     {{ end }}
     {{ end }}
     <div class="caption">
-        <h3>{{ .title }}</h3>
-        <p>{{ .content }}</p>
+        <h3>{{ partial "i18n" .title | safeHTML }}</h3>
+        <p>{{ partial "i18n" .content | safeHTML }}</p>
         <ul class="actions fixed">
-            <li><span class="button small">{{ .button }}</span></li>
+            <li><span class="button small">{{ partial "i18n" .button | safeHTML }}</span></li>
         </ul>
     </div>
 </article>

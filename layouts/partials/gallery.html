@@ -1,8 +1,8 @@
 <!-- Gallery -->
 <section class="wrapper style1 align-center" {{ with .id }} id="{{ . }}"{{ end }}>
     <div class="inner">
-        <h2>{{ .title }}</h2>
-        <p>{{ .content | safeHTML }}</p>
+        <h2>{{ partial "i18n" .title | safeHTML }}</h2>
+        <p>{{ partial "i18n" .content | safeHTML }}</p>
     </div>
 
     <!-- Gallery -->

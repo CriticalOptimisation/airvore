@@ -3,7 +3,7 @@
     <div class="content">
         {{ with .title }}<h1>{{ . }}</h1>{{ end }}
         {{ with .subtitle }}<p class="major">{{partial "i18n" .}}</p>{{ end }}
-        {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
+        {{ with .content }}<p>{{partial "i18n" . | safeHTML}}</p>{{ end }}
         <ul class="actions stacked">
             {{ with .button }}
             <li><a href="#first" class="button primary large wide smooth-scroll-middle">{{partial "i18n" .label}}</a></li>
