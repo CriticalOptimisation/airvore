@@ -14,7 +14,7 @@ baseURL = "http://localhost"
 publishDir = "public"
 
 # Language translation support
-#enableMissingTranslationsPlaceholders = "true"
+enableMissingTranslationsPlaceholders = "true"
 
 ## Built-in server configuration
 watch = "true"
