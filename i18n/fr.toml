@@ -1,6 +1,148 @@
+## Banner
 [the-myth-of-clean-transportation]
 	other = 'Airvore ou le mythe des transports propres'
 
 [get-started]
 	other = 'Démarrer!'
+	
+[have-you-ever-wondered-how-our-daily-commute-is-affecting-the-planet]
+	other = """
+	Vous êtes-vous déjà demandé comment nos trajets quotidiens affectent la planète ?</p><p>
+	<strong>Tant de critiques des voitures électriques que vous ne savez plus par où commencer ?</strong></p><p>
+	Explorons le mythe du transport propre et voyons comment nous pouvons faire la différence !"""
+
+## Spotlights
+[learn-more]
+	other = "En savoir plus"
+
+## Spotlight 1
+[impacts-of-transportation]
+	other = "Comment les transports affectent-ils la nature et le climat ?"
+
+[transportation-impacts-the-climate-and-locally-degrades-air-quality]
+	other = """
+	Les moyens de transport alimentés en énergie au moyen de carburants d'origine fossile, comme
+	l'essence, le fuel, le diesel ou encore le kérosène &ndash; automobiles, camions, avions, navires
+	et certains trains &ndash; contribuent au <strong>dérèglement climatique</strong> parce que <strong>le carbone
+	fossile</strong>, piégé sous terre pendant des millions d'années sous forme de pétrole, est relâché
+	dans l'atmosphère sous la forme de CO<sub>2</sub> lorsqu'il est brûlé dans le moteur d'un véhicule.</p>
+	<p>
+	Ce gaz est présent en quantité faible dans l'atmosphère, où il s'accumule même si une partie est
+	absorbée par les océans et la végétation grâce aux équilibres naturels. <strong>L'effet de
+	serre</strong> désigne son influence sur le climat, avec une tendance générale au réchauffement
+	et des changements climatiques locaux susceptibles d'engendrer des troubles politiques à cause
+	d'inondations, de sècheresse, de migrations ou de baisse des récoltes (grêle, ou déplacement 
+	d'espèces nuisibles). Le dérèglement climatique lié au CO<sub>2</sub> est cumulatif et irréversible 
+	à l'échelle d'une vie humaine, c'est pourquoi nous devons fortement réduire l'utilisation des 
+	énergies fossiles.</p>
+	<p>
+	Mais ce n'est pas le seul impact. L'océan devient acide en absorbant du CO<sub>2</sub> et la vie
+	marine est directement affectée: certains mollusques ont des difficultés à fabriquer
+	leur coquille ce qui affecte toute la chaîne alimentaire. D'autres matières émis directement ou
+	indirectement par les transports viennent renforcer l'effet de serre et créent de la pollution."""
+
+[a-teenager]
+	other = "Un adolescent tenant sa bicyclette à la main regarde une grande ville polluée depuis le toit d'un immeuble."
+	
+## Spotlight 2
+[stopping-climate-change]
+	other = "Prévenir le dérèglement climatique"
+	
+[taking-good-decisions-everytime]
+	other = """
+	Notre impact sur le dérèglement climatique dépend de choix collectifs, mais aussi de choix
+	personnels. Nos transports ne sont pas obligatoirement l'impact le plus important, en particulier
+	lorsque nous faisons des choix pour d'autres personnes dans une entreprise ou une collectivité.</p>
+	<p>
+	L'important est de constamment chercher à réduire ses émissions. Une partie de la population a 
+	l'habitude de faire des voyages lointains en avion. Dans ce cas, utiliser des moyens de transport
+	plus respectueux de l'environnement comme les trains et les navires pour réduire le nombre de vols
+	est un moyen efficace de limiter le dérèglement climatique. Cela vaut aussi pour les voyages
+	professionnels. Le livre donne beaucoup de détails sur l'impact environnemental des différents modes de 
+	transport. Découvrir d'autres manières de voyager permet de faire de nouvelles expériences, en 
+	particulier lorsqu'on a le temps.</p>
+	<p>
+	Pour beaucoup d'actifs, les trajets domicile-travail sont les transports ayant le plus gros impact. 
+	On peut cependant le réduire significativement et améliorer sa qualité de vie en se rapprochant de
+	son lieu de travail et/ou en covoiturant. L'utilisation quotidienne d'un véhicule électrique réduit 
+	d'environ 80% les émissions par rapport à un véhicule thermique, en tenant compte des différences à
+	la fabrication qui sont pour le moment en défaveur des véhicules électriques. En partageant un véhicule
+	on réduit encore collectivement notre impact sur l'environnement. Le vélo donne en plus l'occasion
+	de faire de l'exercice lorsque les circonstances le permettent, ce qui n'est pas toujours le cas à
+	cause du manque d'infrastructures (pistes cyclables, locaux de stockage, vestiaires, circulation, etc.).
+	Enfin pour la plupart des gens les transports en commun sont à privilégier lorsqu'on se déplace seul 
+	et sans bagages, s'ils fonctionnent.
+	"""
+
+[a-large-and-shiny-pick-up-truck]
+	other = "Un gros pick-up rutilant garé sous le soleil, suggérant une période de sécheresse."
+	
+## Spotlight 3
+[bla]
+	other = """
+	Les produits que nous achetons et les déchets que nous produisons engendrent aussi des transports:
+	nos choix de consommation sont un autre levier d'action."""
+	
+## Gallery
+[new-york-1953]
+	other = "New-York 1953"
+	
+[pollution-in-new-york]
+	other = """
+	New York, plongée dans une épaisse couche de smog. Bien que cette photo date de 1953,
+	elle illustre les effets dévastateurs que les émissions polluantes ont sur notre
+	environnement, ainsi que les risques pour la santé qui y sont associés."""
+
+[details]
+	other = "Détails"
+	
+[an-aerial-photograph-of-Manhattan-in-smog]
+	other = "Une vue aérienne de Manhattan envahi par le smog en 1953."
+
+[cars-everyday]
+	other = "La voiture au quotidien"
+	
+[on-the-road-everyday]
+	other = """
+	<strong>La voiture au quotidien?</strong> Oui, mais à quel prix? Regardons de plus prêt l'impact du
+	transport routier sur notre planète et sur notre santé."""
+	
+[the-silent-culprit]
+	other = "Le tueur invisible"
+	
+[transportation-is-contributing-to-ghg-emissions]
+	other = """
+	Saviez-vous que le transport est l'un des plus grands contributeurs aux émissions de gaz
+	à effet de serre ? Les voitures, les bus et les camions émettent des gaz nocifs qui
+	dégradent l'environnement.
+	"""
+
+[the-problem-with-gas-powered-vehicles]
+	other = "Le problèmes des moteurs thermiques"
+	
+[gas-powered-vehicles-emit-carbon-dioxide]
+	other = """
+	Les véhicules à essence émettent du dioxyde de carbone, du méthane et d'autres gaz nocifs
+	qui polluent l'air et contribuent au changement climatique. Passer aux véhicules électriques
+	peut aider à réduire ces émissions.
+	"""
+
+[alternative-transport-options]
+	other = "Les modes de transport alternatifs"
+	
+[there-are-other-transportation-options]
+	other = """
+	Il existe d'autres options de transport plus respectueuses de l'environnement que de
+	conduire seul. Essayez le vélo ou les transports en commun pour réduire votre empreinte
+	carbone.
+	"""
+
+[make-a-difference-today]
+	other = "Passez à l'action tout de suite!"
+	
+[small-changes-can-make-a-big-difference]
+	other = """
+	De petits changements peuvent faire une grande différence ! Pensez au covoiturage, à
+	la marche ou au vélo pour aller au travail ou à l'école. Travaillons ensemble pour
+	réduire notre empreinte carbone et protéger la planète pour les générations futures."""
 	

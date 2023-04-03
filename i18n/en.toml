@@ -3,4 +3,81 @@
 
 [get-started]
 	other = 'Get Started!'
+
+[have-you-ever-wondered-how-our-daily-commute-is-affecting-the-planet]
+	other = """
+	Have you ever wondered how our daily commute is affecting the planet?</p><p>\
+	<strong>So many critics of the electric car, that you don't know where to start?</strong></p><p>
+	Let's talk about the myth of clean transportation and how we can make a difference!"""
+
+# Spotlight 1
+[impacts-of-transportation]
+	other = "How is Transportation Impacting Us?"
+	
+[transportation-impacts-the-climate-and-locally-degrades-air-quality]
+	other = """
+	Transportation means powered by fossil fuels, such as gasoline, fuel, diesel, or kerosene &ndash; 
+	cars, trucks, airplanes, ships, and some trains &ndash; contribute to climate change because 
+	<strong>fossil carbon</strong>, trapped underground for millions of years in the form of oil, 
+	is released into the atmosphere as CO<sub>2</sub> when burned in a vehicle's engine.</p>
+	<p>
+	This gas is present in small amounts in the atmosphere, where it accumulates even if some is
+	absorbed by oceans and vegetation through natural balances. <strong>The greenhouse effect</strong> 
+	refers to its influence on the climate, with a general trend of warming and local climate changes 
+	likely to cause political upheavals due to flooding, drought, migration or decrease in crops 
+	(hail or displacement of harmful species). The climate disruption caused by CO<sub>2</sub> is 
+	cumulative and irreversible at the timescale of a human life, which is why we must drastically 
+	reduce the use of fossil fuels.</p>
+	<p>
+	But that's not the only impact. The ocean becomes more acidic by absorbing CO<sub>2</sub> and 
+	marine life is directly affected: some mollusks have difficulty producing their shell, which 
+	affects the entire food chain. In addition other emissions directly or indirectly linked to
+	transportation reinforce the greenhouse effect and cause air pollution."""
+
+[a-teenager]
+	other = "A teenager holding a bike looks at a large polluted city from a rooftop"
+	
+# Spotlight 2
+[a-large-and-shiny-pick-up-truck]
+	other = "A large and shiny pick-up truck parked under the sun, suggesting a drought caused by climate change."
+	
+# Gallery
+[cars-everyday]
+	other = "On the road everyday"
+	
+[on-the-road-everyday]
+	other = """
+	<strong>On the road everyday</strong>, but at what cost? Let's take a closer \
+	look at the impact of road transportation on our planet and our health."""
+	
+[pollution-in-new-york]
+	other = """
+	This picture shows New York City covered in a thick layer of smog. Even though it \
+	was taken in 1953, it demonstrates the devastating effects that polluting emissions \
+	have on our environment and the associated health risks."""
+
+[an-aerial-photograph-of-Manhattan-in-smog]
+	other = "An aerial photograph of Manhattan in smog, taken in 1953."
+	
+[transportation-is-contributing-to-ghg-emissions]
+	other = """
+	Did you know that transportation is one of the biggest contributors to greenhouse \
+	gas emissions? Cars, buses, and trucks release harmful gases that are damaging our \
+	planet."""
+	
+[gas-powered-vehicles-emit-carbon-dioxide]
+	other = """
+	Gas-powered vehicles emit carbon dioxide, methane, and other harmful gases that \
+	pollute the air and cause climate change. Switching to electric vehicles can help \
+	reduce these emissions."""
+[there-are-other-transportation-options]
+	other = """
+	here are other transportation options that are more eco-friendly than driving alone. \
+	Try biking or taking public transportation to reduce your carbon footprint."""
+	
+[small-changes-can-make-a-big-difference]
+	other = """
+	Small changes can make a big difference! Consider carpooling, walking, or biking \
+	to work or school. Let's work together to reduce our carbon footprint and protect \
+	the planet for future generations."""
 	
