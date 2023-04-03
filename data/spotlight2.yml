@@ -1,11 +1,10 @@
 ####################### Spotlight #########################
 style: "style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
-title : "Spotlight"
-content: |
-  This is also a <strong>Spotlight</strong> element, and it's here because this demo would look a bit empty with just one spotlight. Like all spotlights, you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-spotlight">details</a>).
+title : "Stopping Climate Change"
+content: "Taking good decisions everytime"
 button: 
   label: "Learn More"
   link: "#"
-image: "images/spotlight02.jpg"
-alt: "A close-up photograph of a coyote's head taken by Levi Saunders."
+image: "images/00645-4033011022-Ford F150.png"
+alt: "A large and shiny pick-up truck"
 
